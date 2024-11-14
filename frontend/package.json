@@ -1,0 +1,13 @@
+{
+  "name": "frontend-service",
+  "version": "1.0.0",
+  "description": "Frontnd service for multi-service e-commerce application",
+  "main": "frontend-service.js",
+  "scripts": {
+    "start": "node frontend-service.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
+  }
+}

@@ -1,0 +1,32 @@
+services:
+  frontend-service:
+    build: ./frontend
+    ports:
+      - "9000:9000"
+    networks:
+      - e-commerce-app-network
+
+  product-service:
+    build: ./product
+    ports:
+      - "9001:9001"
+    networks:
+      - e-commerce-app-network
+
+  order-service:
+    build: ./order
+    ports:
+      - "9002:9002"
+    networks:
+      - e-commerce-app-network
+
+  user-service:
+    build: ./user
+    ports:
+      - "9003:9003"
+    networks:
+      - e-commerce-app-network
+
+networks:
+  e-commerce-app-network:
+    driver: bridge

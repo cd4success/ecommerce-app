@@ -1,0 +1,13 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "Product service for multi-service e-commerce application",
+  "main": "product_service.js",
+  "scripts": {
+    "start": "node product_service.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
+  }
+}
