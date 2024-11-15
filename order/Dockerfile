@@ -7,6 +7,7 @@ RUN npm install
 
 COPY . .
 COPY pages/ pages/
+COPY static/ static/
 
 EXPOSE 9002
 CMD ["node", "order_service.js"]
