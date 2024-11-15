@@ -7,6 +7,7 @@ RUN npm install
 
 COPY . .
 COPY pages/ pages/
+COPY static/ static/
 
 EXPOSE 9000
 CMD ["node", "frontend_service.js"]

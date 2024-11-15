@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
-    <title>Products</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .product { border: 1px solid #ccc; padding: 10px; margin: 10px; }
-        img { width: 100px; height: 100px; }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Multiservice E-commerce App</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Products</h1>
-    <% products.forEach(product => { %>
-        <div class="product">
-            <h2><%= product.name %></h2>
-            <p>Price: $<%= product.price %></p>
-            <img src="<%= product.image %>" alt="<%= product.name %>">
+    <div class="wrapper">
+        <h1>All Products</h1>
+        <div class="item-container">
+            <% products.forEach(product => { %>
+                <div class="item">
+                    <h2><%= product.name %></h2>
+                    <p>Price: $<%= product.price %></p>
+                    <img src="<%= product.image %>" alt="<%= product.name %>">
+                </div>
+            <% }) %>
         </div>
-    <% }) %>
+    </div>
 </body>
 </html>

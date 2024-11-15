@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
 <head>
-    <title>Users</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        .user { border: 1px solid #ccc; padding: 10px; margin: 10px; }
-    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | Multiservice E-commerce App</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Users</h1>
-    <% users.forEach(user => { %>
-        <div class="user">
-            <h2><%= user.name %></h2>
-            <p>Email: <%= user.email %></p>
-            <p>Age: <%= user.age %></p>
+    <div class="wrapper">
+        <h1>All Users</h1>
+        <div class="item-container">
+            <% users.forEach(user => { %>
+                <div class="item">
+                    <h2>Name: <%= user.name %></h2>
+                    <p>Email: <%= user.email %></p>
+                    <p>Age: <%= user.age %></p>
+                </div>
+            <% }) %>
         </div>
-    <% }) %>
+    </div>
 </body>
 </html>
